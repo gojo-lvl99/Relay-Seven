@@ -64,3 +64,7 @@ V2rayNG/app/google-services.json
 # Ignore OS-specific files
 Thumbs.db
 .DS_Store
+V2rayNG/app/libs/*.aar
+V2rayNG/app/libs/*.jar
+V2rayNG/app/build/
+AndroidLibXrayLite/*.aar
