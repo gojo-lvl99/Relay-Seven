@@ -204,6 +204,7 @@ object AppConfig {
     const val HTTP = "http://"
     const val VLESS = "vless://"
     const val TROJAN = "trojan://"
+    const val SSH = "ssh://"
     const val WIREGUARD = "wireguard://"
     const val TUIC = "tuic://"
     const val HYSTERIA = "hysteria://"
