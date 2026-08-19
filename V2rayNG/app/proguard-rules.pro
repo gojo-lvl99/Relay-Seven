@@ -19,3 +19,21 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+# Gomobile/libv2ray bridge keep rules
+-keep class go.** { *; }
+-dontwarn go.**
+-keep class libv2ray.** { *; }
+-dontwarn libv2ray.**
+-keep class dev.relay7.core.dto.** { *; }
+-keep class dev.relay7.core.handler.** { *; }
+-keep class dev.relay7.core.service.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
+-keep class com.google.gson.** { *; }
+-keep class * implements com.google.gson.TypeAdapter
+-keep class * implements com.google.gson.TypeAdapterFactory
+-keep class * implements com.google.gson.JsonSerializer
+-keep class * implements com.google.gson.JsonDeserializer
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
