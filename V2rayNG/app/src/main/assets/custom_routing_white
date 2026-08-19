@@ -1,33 +1,59 @@
 [
   {
-    "remarks": "阻断udp443",
+    "remarks": "Ads & Tracking Protection",
+    "outboundTag": "block",
+    "domain": [
+      "geosite:category-ads-all",
+      "geosite:win-spy",
+      "domain:analytics.google.com",
+      "domain:sentry.io",
+      "domain:getsentry.com",
+      "domain:sentry-cdn.com",
+      "domain:bugsnag.com",
+      "domain:byteoversea.com",
+      "domain:ads-api.tiktok.com",
+      "domain:ads-sg.tiktok.com",
+      "domain:business-api.tiktok.com",
+      "domain:yahoo.com",
+      "domain:yahooinc.com",
+      "domain:yandex.ru",
+      "domain:yandex.net",
+      "domain:appmetrica.yandex.ru",
+      "domain:adfox.yandex.ru",
+      "domain:metrika.yandex.ru",
+      "domain:miui.com",
+      "domain:xiaomi.com"
+    ]
+  },
+  {
+    "remarks": "Block UDP 443",
     "outboundTag": "block",
     "port": "443",
     "network": "udp"
   },
   {
-    "remarks": "代理Google",
+    "remarks": "Proxy Google",
     "outboundTag": "proxy",
     "domain": [
       "geosite:google"
     ]
   },
   {
-    "remarks": "绕过局域网IP",
+    "remarks": "Bypass LAN IP",
     "outboundTag": "direct",
     "ip": [
       "geoip:private"
     ]
   },
   {
-    "remarks": "绕过局域网域名",
+    "remarks": "Bypass LAN Domain",
     "outboundTag": "direct",
     "domain": [
       "geosite:private"
     ]
   },
   {
-    "remarks": "绕过中国公共DNSIP",
+    "remarks": "Bypass China Public DNS IP",
     "outboundTag": "direct",
     "ip": [
       "223.5.5.5",
@@ -68,7 +94,7 @@
     ]
   },
   {
-    "remarks": "绕过中国公共DNS域名",
+    "remarks": "Bypass China Public DNS Domain",
     "outboundTag": "direct",
     "domain": [
       "domain:alidns.com",
@@ -79,14 +105,14 @@
     ]
   },
   {
-    "remarks": "绕过中国IP",
+    "remarks": "Bypass China IP",
     "outboundTag": "direct",
     "ip": [
       "geoip:cn"
     ]
   },
   {
-    "remarks": "绕过中国域名",
+    "remarks": "Bypass China Domain",
     "outboundTag": "direct",
     "domain": [
       "geosite:cn"
